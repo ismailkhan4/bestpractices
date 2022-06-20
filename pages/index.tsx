@@ -1,5 +1,6 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
+import { Navbar } from '../components';
 
 import styles from '../styles/Home.module.scss';
 
@@ -10,12 +11,7 @@ const IndexPage: NextPage = () => {
         <title>Best Practices | A Collaborative App for Developers.</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className={styles.header}>
-        <p>
-          <span className={styles.link}>BestPractices</span> | A Collaborative
-          App for Developers.
-        </p>
-      </header>
+      <Navbar />
     </div>
   );
 };
