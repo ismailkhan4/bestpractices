@@ -4,8 +4,10 @@ import styles from './styles.module.scss';
 const Navbar = () => {
   return (
     <div className={styles.nav}>
-      <h3>Best Practices</h3>
-      <div className={styles.navbar}>
+      <Link href="/" passHref>
+        <h3>Best Practices</h3>
+      </Link>
+      <div className={styles.navBar}>
         <ul>
           <li>
             <Link href="/about">About</Link>
@@ -19,7 +21,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className={styles.searchBar}>
-        <span>Srach best practices ...</span>
+        <input type="text" name="" id="" placeholder="Search best practices" />
         <svg
           width="23"
           height="22"
@@ -33,8 +35,8 @@ const Navbar = () => {
             strokeOpacity="0.5"
           />
         </svg>
-        {/* <Image src={Search} height={30} width={30} /> */}
       </div>
+      <button>Get Started</button>
     </div>
   );
 };
