@@ -8,10 +8,9 @@ import { Layout } from '../components';
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Provider store={store}>
-      <>
-        <Layout />
+      <Layout>
         <Component {...pageProps} />
-      </>
+      </Layout>
     </Provider>
   );
 }

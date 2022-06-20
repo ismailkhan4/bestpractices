@@ -1,7 +1,7 @@
 @import '../../styles/variable.module.scss';
 .nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   h3 {
     color: $primary-color;
@@ -15,7 +15,7 @@
       flex-direction: row;
       list-style: none;
       li {
-        padding: 0 0.5rem;
+        padding: 0 0.75rem;
 
         &:hover {
           color: $primary-color;
