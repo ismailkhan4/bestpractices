@@ -1,3 +1,4 @@
+$color-primary: rgb(7, 39, 103);
 .container {
   text-align: center;
 }
@@ -17,7 +18,7 @@
 }
 
 .link {
-  color: rgb(112, 76, 182);
+  color: $color-primary;
 }
 
 @media (prefers-reduced-motion: no-preference) {
